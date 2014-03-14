@@ -1,0 +1,103 @@
+/*
+Recruitment Tool version 1.0 stylesheet
+Date created: 2013.08.21
+Author: nguyentg
+Description: Print stylesheet
+*/
+
+.io-print-preview {
+	display: none;
+}
+
+@media print {
+	body > * {
+		display: none;
+	}
+	
+	.io-print-preview {
+		display: block;
+		/*width: 680px;*/
+		background-color: white;
+		
+	}
+	
+	.io-print-preview * {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	.io-print-preview ul {
+		padding-left: 20px;
+	}
+	
+	.io-print-preview header {
+		position: relative;
+		height: 80px;
+	}
+	
+	.io-print-preview header.candidate {
+		height: 120px;
+	}
+	
+	.io-print-preview header .logo{
+		position: absolute;
+		right: 0px;
+		z-index: 1;
+		height: 80px; width:196px;
+	}
+	
+	
+	.io-print-preview header .background {
+		position: absolute;
+		left: 0px;
+		z-index: 1;
+		height: 80px;
+		width: 2000px;
+	} 
+	
+	.io-print-preview header .title {
+		position: absolute;
+		z-index: 2;
+		color: white !important;
+		top: 20px;
+		left: 20px;
+		font-size: 18px;
+		
+	}
+	
+	.io-print-preview header .sub-title {
+		position: absolute;
+		z-index: 3;
+		color: white !important;
+		top: 40px;
+		left: 20px;
+		font-size: 14px;
+	}
+	
+	.io-print-preview header.candidate .title, .io-print-preview header.candidate .sub-title {
+		left: 140px;
+	}
+	
+	.io-print-preview header .candidate-avatar {
+		position: absolute;
+		z-index: 4;
+		top: 20px;
+		left: 20px;
+		width: 90px;
+		height: 90px;
+		border: solid #2c7db7 5px;
+	}
+	
+	.io-print-preview content {
+		
+		
+	}
+	
+	.io-print-preview .candidate-status {
+		position: absolute;
+		width: 240px;
+		border: solid 1px #2c7db7;
+		right: 20px;
+		top: 140px;
+	}
+}
